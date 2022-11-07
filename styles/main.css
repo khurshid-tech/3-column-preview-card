@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 2rem;
+}
+
+.card-part {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 3rem;
+}
+
+.card-part.card-sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+.card-part.card-suv {
+    background-color: hsl(184, 100%, 22%);
+}
+.card-part.card-luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card-title {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+.card-info {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.card-btn {
+    width: 55%;
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card-sedan .card-btn{
+    color: hsl(31, 77%, 52%);
+}
+.card-suv .card-btn{
+    color: hsl(184, 100%, 22%);
+}
+.card-luxury .card-btn{
+    color: hsl(179, 100%, 13%);
+}
+
+.card-btn:hover{
+    background: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media (min-width: 992px) {
+    .card-wrapper {
+        height: 100vh;
+    }
+    .card {
+        flex-direction: row;
+        width: 60%;
+    }
+    .card-part {
+        flex-direction: column;
+    }
+    .card-info {
+        margin-bottom: 3rem;
+    }
+    .card-btn {
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+
+
+
